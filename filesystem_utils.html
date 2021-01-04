@@ -24,6 +24,9 @@
       <li><a href="#create_partition">create_partition</a></li>
       <li><a href="#remove_partition">remove_partition</a></li>
       <li><a href="#format_partition">format_partition</a></li>
+      <li><a href="#df_command">df_command</a></li>
+      <li><a href="#get_partition_size">get_partition_size</a></li>
+      <li><a href="#get_used_partition_space">get_used_partition_space</a></li>
     </ul>
   </li>
 </ul><h1>lib/filesystem_utils.pm</h1>
@@ -67,6 +70,24 @@
 <h2 id="format_partition">format_partition</h2>
 
 <p>Format partition to target filesystem</p>
+
+<h2 id="df_command">df_command</h2>
+
+<p>Returns the value of the &quot;df -h&quot; output in given column, for a given partition</p>
+
+<pre><code>  df_command([partition=&gt;$partition , column=&gt; $column])</code></pre>
+
+<h2 id="get_partition_size">get_partition_size</h2>
+
+<p>Return the value of the defined partition size</p>
+
+<pre><code>  get_partition_size($partition)</code></pre>
+
+<h2 id="get_used_partition_space">get_used_partition_space</h2>
+
+<p>Returns the value of used space of the defined partition</p>
+
+<pre><code>  get_used_partition_space($partition)</code></pre>
 
 
 </body>
